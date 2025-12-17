@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: system-ui, serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: 400% 400%;
+  animation: gradient 14s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.canvas {
+  max-width: 650px;
+  padding: 56px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+.canvas.letter {
+  max-width: 850px;
+}
+
+pre {
+  white-space: pre-line;
+  font-size: 36px;
+}
+
+.canvas.letter pre {
+  font-size: 22px;
+}
+
+.controls {
+  margin-top: 24px;
+  text-align: center;
+}
+
+select,
+textarea,
+input {
+  margin: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
